@@ -1,0 +1,38 @@
+{
+  "product_name": "Demo Protein Bar",
+  "brand": "Demo Foods",
+  "barcode": "0000000000000",
+  "nutrition": {
+    "energy_kcal": 410,
+    "protein": 20,
+    "carbohydrates": 45,
+    "sugars": 8,
+    "fat": 12,
+    "saturated_fat": 3,
+    "fiber": 6,
+    "salt": 0.3
+  },
+  "ingredients": [
+    "Whey protein isolate",
+    "Almonds",
+    "Oats",
+    "Dates",
+    "Cocoa powder"
+  ],
+  "ingredients_text": "Whey protein isolate, almonds, oats, dates, cocoa powder",
+  "claims": [
+    "High Protein",
+    "No Added Sugar"
+  ],
+  "allergens": "milk, tree nuts, gluten",
+  "categories": "Protein bars",
+  "labels": "High Protein, No Added Sugar",
+  "images": {},
+  "serving_size": "50 g",
+  "quantity": "50 g",
+  "countries": "India",
+  "additives": [],
+  "nova_group": null,
+  "source": "DEMO DATA",
+  "is_demo": true
+}

@@ -1,0 +1,329 @@
+{
+  "_meta": "Deterministic claim rules. Add a claim by adding an entry. type: nutrient_min | ingredient_absence | ambiguous | no_evidence. working_threshold_* values are configurable working values, NOT official unless the matching regulatory_references.json entry has verified=true.",
+  "high_protein": {
+    "label": "High protein",
+    "type": "nutrient_min",
+    "nutrient": "protein",
+    "working_threshold_per_100g": 20,
+    "keywords": [
+      "high protein",
+      "high-protein",
+      "protein rich",
+      "protein-rich",
+      "rich in protein",
+      "riche en proteines",
+      "alto en proteinas",
+      "rico en proteinas",
+      "proteinreich",
+      "hoher proteingehalt",
+      "ricco di proteine",
+      "alto teor de proteina",
+      "rico em proteina",
+      "hoog in eiwit",
+      "eiwitrijk",
+      "उच्च प्रोटीन",
+      "प्रोटीन युक्त"
+    ],
+    "topics": [
+      "protein"
+    ],
+    "required_evidence": [
+      "protein"
+    ],
+    "regulatory_key": "high_protein",
+    "description": "Compares protein per 100 g with a configurable threshold.",
+    "can_infer_supported": [
+      "The product contains a high protein amount according to the reference used."
+    ],
+    "can_infer_other": [
+      "The product is marketed with a \"High protein\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "Low calorie",
+      "Low sugar",
+      "Low fat",
+      "Healthy overall",
+      "Suitable for everyone"
+    ]
+  },
+  "no_added_sugar": {
+    "label": "No added sugar",
+    "type": "ingredient_absence",
+    "forbidden_ingredient_keywords": [
+      "sugar",
+      "sucrose",
+      "glucose",
+      "fructose",
+      "dextrose",
+      "maltose",
+      "syrup",
+      "honey",
+      "jaggery",
+      "molasses",
+      "invert",
+      "cane juice",
+      "maltodextrin",
+      "azucar",
+      "sucre",
+      "sucres",
+      "zucker",
+      "zucchero",
+      "acucar",
+      "suiker",
+      "cukier",
+      "चीनी"
+    ],
+    "keywords": [
+      "no added sugar",
+      "no added sugars",
+      "without added sugar",
+      "no sugar added",
+      "zero added sugar",
+      "sans sucres ajoutes",
+      "sans sucre ajoute",
+      "sin azucares anadidos",
+      "sin azucar anadido",
+      "ohne zuckerzusatz",
+      "senza zuccheri aggiunti",
+      "sem acucar adicionado",
+      "zonder toegevoegde suikers",
+      "बिना अतिरिक्त चीनी"
+    ],
+    "topics": [
+      "sugar",
+      "sugars"
+    ],
+    "required_evidence": [
+      "ingredients"
+    ],
+    "regulatory_key": "no_added_sugar",
+    "description": "Scans the ingredient list for added-sugar ingredient names.",
+    "can_infer_supported": [
+      "No added-sugar ingredient names appear in the ingredient list available."
+    ],
+    "can_infer_other": [
+      "The product is marketed with a \"No added sugar\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "Sugar-free (total sugars can still come from fruit, milk or other ingredients)",
+      "Low calorie",
+      "Suitable for diabetics",
+      "Healthy overall"
+    ]
+  },
+  "no_added_salt": {
+    "label": "No added salt",
+    "type": "ingredient_absence",
+    "forbidden_ingredient_keywords": [
+      "salt",
+      "sodium chloride",
+      "sel",
+      "sal",
+      "salz",
+      "sale",
+      "zout"
+    ],
+    "keywords": [
+      "no added salt",
+      "without added salt",
+      "no salt added",
+      "zero added salt",
+      "sans sel ajoute",
+      "sin sal anadida",
+      "ohne salzzusatz",
+      "senza sale aggiunto",
+      "sem sal adicionado"
+    ],
+    "topics": [
+      "salt",
+      "sodium"
+    ],
+    "required_evidence": [
+      "ingredients"
+    ],
+    "regulatory_key": "no_added_salt",
+    "description": "Scans the ingredient list for salt ingredient names.",
+    "can_infer_supported": [
+      "No added-salt ingredient names appear in the ingredient list available."
+    ],
+    "can_infer_other": [
+      "The product is marketed with a \"No added salt\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "Salt/sodium-free (sodium occurs naturally in foods)",
+      "Low sodium",
+      "Suitable for a low-sodium diet",
+      "Healthy overall"
+    ]
+  },
+  "high_fibre": {
+    "label": "High / rich in fibre",
+    "type": "nutrient_min",
+    "nutrient": "fiber",
+    "working_threshold_per_100g": 6,
+    "keywords": [
+      "high fibre",
+      "high fiber",
+      "high-fibre",
+      "high-fiber",
+      "rich in fibre",
+      "rich in fiber",
+      "fibre rich",
+      "fiber rich",
+      "fibre-rich",
+      "fiber-rich",
+      "riche en fibres",
+      "alto en fibra",
+      "rico en fibra",
+      "ballaststoffreich",
+      "ricco di fibre",
+      "alto teor de fibra",
+      "rico em fibras"
+    ],
+    "topics": [
+      "fibre",
+      "fiber"
+    ],
+    "required_evidence": [
+      "fiber"
+    ],
+    "regulatory_key": "high_fibre",
+    "description": "Compares dietary fibre per 100 g with a configurable threshold.",
+    "can_infer_supported": [
+      "The product contains a high fibre amount according to the reference used."
+    ],
+    "can_infer_other": [
+      "The product is marketed with a \"High fibre\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "Low sugar",
+      "Low calorie",
+      "Healthy overall",
+      "Suitable for everyone"
+    ]
+  },
+  "natural": {
+    "label": "Natural",
+    "type": "natural_check",
+    "keywords": [
+      "natural",
+      "100 natural",
+      "all natural",
+      "naturel",
+      "naturelle",
+      "naturales",
+      "naturlich",
+      "naturale",
+      "natuurlijk",
+      "प्राकृतिक"
+    ],
+    "topics": [
+      "natural"
+    ],
+    "required_evidence": [],
+    "regulatory_key": "natural",
+    "description": "'Natural' has no fixed test. ClaimGuard checks the ingredient list and processing indicators (additives, NOVA group) and never marks it SUPPORTED automatically.",
+    "ambiguity_reason": "The product presents a 'Natural' claim, but the available product evidence does not provide enough information to independently establish the complete meaning of the claim.",
+    "can_infer_supported": [],
+    "can_infer_other": [
+      "The product is marketed using a \"Natural\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "The entire product is necessarily healthy",
+      "All ingredients are necessarily natural",
+      "The product is minimally processed"
+    ],
+    "artificial_keywords": [
+      "artificial",
+      "synthetic",
+      "nature identical",
+      "preservative",
+      "flavour enhancer",
+      "flavor enhancer",
+      "monosodium glutamate",
+      "aspartame",
+      "sucralose",
+      "acesulfame",
+      "tbhq",
+      "bht",
+      "bha",
+      "artificiel",
+      "kunstlich"
+    ]
+  },
+  "farm_fresh": {
+    "label": "Farm fresh",
+    "type": "no_evidence",
+    "keywords": [
+      "farm fresh",
+      "farm-fresh",
+      "frais de la ferme",
+      "fresco de granja",
+      "frisch vom bauernhof"
+    ],
+    "topics": [
+      "farm fresh",
+      "farm"
+    ],
+    "required_evidence": [],
+    "regulatory_key": "farm_fresh",
+    "description": "Farm origin/freshness is not something Open Food Facts nutrition or ingredient data can establish.",
+    "ambiguity_reason": "Open Food Facts data does not record farm origin or freshness in a form ClaimGuard can check.",
+    "can_infer_supported": [],
+    "can_infer_other": [
+      "The product is marketed using a \"Farm fresh\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "The product was made or grown on a farm",
+      "The product was recently produced or harvested",
+      "The product is unprocessed or preservative-free"
+    ]
+  },
+  "healthy": {
+    "label": "Healthy",
+    "type": "healthy_check",
+    "keywords": [
+      "healthy",
+      "healthier",
+      "sain",
+      "saine",
+      "saludable",
+      "gesund",
+      "sano",
+      "saudavel",
+      "gezond",
+      "स्वस्थ"
+    ],
+    "topics": [
+      "healthy",
+      "health"
+    ],
+    "required_evidence": [],
+    "regulatory_key": "healthy",
+    "description": "'Healthy' cannot be settled by one number. ClaimGuard flags nutrients that are HIGH per 100 g (working reference: UK FSA front-of-pack 'red' levels, not an FSSAI value) and never marks it SUPPORTED automatically.",
+    "ambiguity_reason": "'Healthy' is a broad claim. Nutrient values alone cannot establish it, and no single verified test is available in the current knowledge base.",
+    "can_infer_supported": [],
+    "can_infer_other": [
+      "The product is marketed using a \"Healthy\" claim."
+    ],
+    "can_infer": [],
+    "do_not_infer": [
+      "Good for everyone",
+      "Low in sugar, fat and calories",
+      "Suitable for unlimited consumption",
+      "Better than similar products"
+    ],
+    "high_thresholds_per_100g": {
+      "sugars": 22.5,
+      "saturated_fat": 5,
+      "salt": 1.5,
+      "fat": 17.5
+    }
+  }
+}
